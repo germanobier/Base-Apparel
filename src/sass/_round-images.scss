@@ -2,16 +2,25 @@
   padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 70%;
+  width: 85%;
 
-  img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    transition: 0.3s;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
 
-    &:hover {
-      transform: scale(1.15);
+  a {
+    justify-self: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      transition: 0.3s;
+  
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 }

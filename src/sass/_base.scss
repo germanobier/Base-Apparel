@@ -14,7 +14,6 @@ body {
 .container {
   max-width: 1500px;
   width: 90%;
-  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -22,4 +21,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-introduction {
+  h1 {
+    font-size: 180%;
+    padding: 25px 0;
+  }
 }
