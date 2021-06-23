@@ -1,0 +1,17 @@
+.round-images {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 70%;
+
+  img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
