@@ -1,0 +1,40 @@
+.product-bg {
+  position: relative;
+  width: 80%;
+  background-color: #f9dada;
+
+  .product-text {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+
+    @media (max-width: 1260px) {
+      padding-bottom: 0;
+    }
+
+    .product-build img {
+      display: block;
+      height: 450px;
+      width: 330px;
+      margin-right: 60px;
+    }
+
+    .call-button {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #f9dada;
+      border: 1px solid #ec9ba9;
+      color: #ec9ba9;
+      border-radius: 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #fff;
+        background-color: #fda6b4;;
+      }
+    }
+  }
+}
