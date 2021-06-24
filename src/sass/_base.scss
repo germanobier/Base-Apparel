@@ -7,8 +7,18 @@
   text-decoration: none;
 }
 
+/*html,
+body {
+  position: relative;
+  height: 100%;
+}*/
+
 body {
   background-color: #f1f1f1;
+}
+
+a {
+  color: #000;
 }
 
 .container {
@@ -17,15 +27,11 @@ body {
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .text-introduction {
-  h1 {
-    font-size: 180%;
-    padding: 25px 0;
+  max-width: 405px;
+
+  .title-introduction {
+    font-size: 220%;
+    margin: 25px 0;
   }
 }

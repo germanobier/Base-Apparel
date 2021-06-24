@@ -14,15 +14,15 @@
 
     .banners {
       display: flex;
-      width: 65%;
       height: 483px;
-      max-width: 900px;
+      margin-left: 60px;
 
-      img {
+      .banners-img {
         display: block;
         width: 100%;
         max-width: 350px;
         height: 430px;
+        object-fit: cover;
       }
   
       .banner-text {
@@ -32,8 +32,8 @@
         padding: 20px 25px;
         border-radius: 0 0 5px 5px;
   
-        h4 {
-          font-size: 16px;
+        .banner-title {
+          font-size: 18px;
           margin-bottom: 8px;
         }
       }
@@ -45,8 +45,11 @@
 
         .small-banner {
           margin-bottom: 30px;
+          max-width: 350px;
 
-          img {
+          .small-img {
+            width: 100%;
+            display: block;
             height: 225px;
           }
         }

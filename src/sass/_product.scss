@@ -12,8 +12,9 @@
       padding-bottom: 0;
     }
 
-    .product-build img {
+    .img-build {
       display: block;
+      object-fit: cover;
       height: 450px;
       width: 330px;
       margin-right: 60px;

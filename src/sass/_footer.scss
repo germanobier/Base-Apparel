@@ -1,0 +1,125 @@
+.divider {
+  margin-top: 200px;
+  position: relative;
+  height: 33px;
+
+  .logo {
+    position: relative;
+    width: 228px;
+    background: #f1f1f1;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #666666;
+    z-index: 1;
+  }
+}
+
+.footer-content {
+  margin-top: 85px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-menu {
+    font-size: 115%;
+    display: block;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: #cf939d;
+    }
+  }
+
+  .footer-lists {
+    display: flex;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+  
+      &:hover {
+        color: #cf939d;
+      }
+    }
+  }
+
+  .footer-mid {
+    width: 40%;
+    margin: 0 auto;
+
+    .footer-form {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .email {
+        width: 70%;
+        border: none;
+        background-color: #f1f1f1;
+      }
+  
+      .send-email {
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          color: #cf939d;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #666666;
+        z-index: 1;
+      }
+    }
+  }
+
+  .footer-links .media-icon:last-child {
+    display: none;
+  }
+
+  .footer-links:hover .media-icon:first-child {
+    display: none;
+  }
+
+  .footer-links:hover .media-icon:last-child {
+    display: inline;
+  }  
+
+  .media-icon {
+    width: 19px;
+    margin-right: 5px;
+  }
+}
+
+.cnpj {
+  text-align: center;
+  padding: 100px 0 50px 0;
+}
