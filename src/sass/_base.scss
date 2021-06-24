@@ -23,12 +23,16 @@ a {
 
 .container {
   max-width: 1500px;
-  width: 90%;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
 .text-introduction {
   max-width: 405px;
+
+  @media (max-width: 830px) {
+    max-width: 345px;
+  }
 
   .title-introduction {
     font-size: 220%;

@@ -19,7 +19,11 @@
   @media (max-width: 1260px) {
     position: relative;
     top: 65px;
-    right: 0;
+    right: -17%;
+  }
+
+  @media (max-width: 768px) {
+    right: -6%;
   }
 }
 
