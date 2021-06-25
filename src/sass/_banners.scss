@@ -1,27 +1,6 @@
 .banners-background {
-  background-color: #f9dada;
+  background-color: $background-pink;
   display: flex;
-
-  .text-introduction {
-    margin-top: -100px;
-    position: relative;
-
-    @media (max-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 50px;
-    }
-  }
-
-  .arrow {
-    width: 112px;
-    height: 112px;
-    position: absolute;
-    bottom: -230px;
-    cursor: pointer;
-    transform: rotateZ(270deg);
-    animation: pulse 0.7s infinite;
-    animation-direction: alternate;
-  }
 
   .banners-flex {
     width: 100%;
@@ -36,6 +15,31 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
+    }
+
+    .text-introduction {
+      margin-top: -100px;
+      position: relative;
+  
+      @media (max-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
+  
+    .arrow {
+      width: 112px;
+      height: 112px;
+      position: absolute;
+      bottom: -230px;
+      cursor: pointer;
+      transform: rotateZ(270deg);
+      animation: pulse 0.7s infinite;
+      animation-direction: alternate;
+  
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     .banners {
@@ -65,11 +69,12 @@
       }
   
       .banner-text {
-        background-color: #fdc6cf;
+        background-color: $background-text;
         font-size: 14px;
         text-align: center;
         padding: 20px 25px;
         border-radius: 0 0 5px 5px;
+        max-width: 350px;
   
         .banner-title {
           font-size: 18px;

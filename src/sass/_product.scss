@@ -1,25 +1,25 @@
 .product-bg {
   position: relative;
   width: 90%;
-  background-color: #f9dada;
+  background-color: $background-pink;
 
   .product-text {
     display: flex;
     align-items: center;
     padding: 60px 0;
-    max-width: 690px;
-
-    @media (max-width: 678px) {
-      flex-direction: column;
-      text-align: center;
-    }
+    max-width: 676px;
 
     @media (max-width: 1260px) {
       padding-bottom: 80px;
       padding-top: 80px;
     }
 
-    .img-build {
+    @media (max-width: 678px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .dressmaker-img {
       display: block;
       object-fit: cover;
       height: 450px;
@@ -36,17 +36,17 @@
       margin-top: 25px;
       font-size: 16px;
       font-weight: bold;
-      background-color: #f9dada;
-      border: 1px solid #ec9ba9;
-      color: #ec9ba9;
+      background-color: $background-pink;
+      border: 1px solid $strong-pink;
+      color: $strong-pink;
       border-radius: 5px;
       padding: 10px 30px;
       cursor: pointer;
-      transition: 0.3s;
+      transition-duration: 0.3s;
 
       &:hover {
-        color: #fff;
-        background-color: #fda6b4;;
+        color: $white;
+        background-color: $strong-pink;
       }
     }
   }

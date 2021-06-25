@@ -7,14 +7,17 @@
   text-decoration: none;
 }
 
-/*html,
-body {
-  position: relative;
-  height: 100%;
-}*/
+$black: #000;
+$strong-pink: #fda6b4;
+$background-pink: #f9dada;
+$background-body: #fbfbfb;
+$background-text: #fdc6cf;
+$transparent-hover: #ffffff91;
+$white: #fff;
 
 body {
-  background-color: #f1f1f1;
+  background-color: $background-body;
+  position: relative;
 }
 
 .overlay {
@@ -23,7 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1500;
-  background-color: black;
+  background-color: #000;
   opacity: 0.5;
 }
 
@@ -32,7 +35,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: $black;
 }
 
 .container {
@@ -56,4 +59,19 @@ a {
     font-size: 220%;
     margin: 25px 0;
   }
+}
+
+@mixin box-insta() {
+  width: 360px;
+  height: 360px;
+  position: relative;
+}
+
+@mixin logo-insta() {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  opacity: 0.5;
 }

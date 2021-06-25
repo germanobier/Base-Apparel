@@ -6,7 +6,7 @@
   .logo {
     position: relative;
     width: 228px;
-    background: #f1f1f1;
+    background-color: $background-body;
     margin: 0 auto;
     text-align: center;
     z-index: 2;
@@ -43,7 +43,7 @@
     transition-duration: 0.3s;
 
     &:hover {
-      color: #cf939d;
+      color: $strong-pink;
     }
   }
 
@@ -65,7 +65,7 @@
       margin-bottom: 5px;
   
       &:hover {
-        color: #cf939d;
+        color: $strong-pink;
       }
     }
   }
@@ -76,6 +76,7 @@
 
     @media (max-width: 768px) {
       margin: 50px 0 65px 0;
+      width: 90%;
     }
 
     .footer-form {
@@ -84,25 +85,36 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
       .email {
         width: 70%;
         border: none;
-        background-color: #f1f1f1;
+        background-color: transparent;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 15px;
+          text-align: center
+        }
       }
   
-      .send-email {
+      .btn-send {
         border: none;
         cursor: pointer;
+        background-color: transparent;
   
         &:hover {
-          color: #cf939d;
+          color: $strong-pink;
         }
       }
 
-      &::before {
+      &::after {
         content: "";
         position: absolute;
-        bottom: -15px;
+        bottom: -12px;
         display: block;
         width: 100%;
         border-bottom: 1px solid #666666;
