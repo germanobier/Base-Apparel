@@ -15,9 +15,13 @@ $white: #fff;
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: $background-body;
-  position: relative;
+  overflow-x: hidden;
 }
 
 .overlay {

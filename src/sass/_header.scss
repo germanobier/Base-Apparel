@@ -1,10 +1,9 @@
  header {
   background-color: $background-body;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 102px;
   z-index: 3000;
-  transition: 0.3s;
 }
 
 .header-content {
@@ -142,7 +141,7 @@
       .menu-toggle {
         position: absolute;
         top: 34px;
-        right: 38px;
+        right: 20px;
   
         .one {
           transform: rotate(45deg) translate(6px, 7px);
