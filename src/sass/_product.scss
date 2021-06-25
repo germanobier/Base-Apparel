@@ -1,11 +1,7 @@
 .product-bg {
   position: relative;
-  width: 80%;
+  width: 90%;
   background-color: #f9dada;
-
-  @media (max-width: 768px) {
-    width: 90%;
-  }
 
   .product-text {
     display: flex;
@@ -19,7 +15,8 @@
     }
 
     @media (max-width: 1260px) {
-      padding-bottom: 0;
+      padding-bottom: 80px;
+      padding-top: 80px;
     }
 
     .img-build {

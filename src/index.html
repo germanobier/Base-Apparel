@@ -18,11 +18,14 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <div class="overlay"></div>
   <header>
     <div class="container">
       <div class="header-content">
-        <div>
-          <a href="index.html"><img src="./icons/logo.svg" alt=""></a>
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo-img" src="./icons/logo.svg" alt="">
+          </a>
         </div>
   
         <div class="menu-section">
@@ -32,7 +35,7 @@
             <div class="three"></div>
           </div>
   
-          <nav>
+          <nav class="navbar">
             <ul class="nav-list">
               <li>
                 <a class="nav-links" href="#">Menu</a>
@@ -84,22 +87,22 @@
     </section>
 
     <section class="container round-images">
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
-      <a class="round-links" href="">
+      <a class="round-links" data-anime="up" href="#">
         <img class="round-img" src="./images/roupas.jpg" alt="">
       </a>
     </section>
@@ -120,10 +123,12 @@
             semper feugiat nibh sed pulvinar proin
             gravida.
           </p>
+
+          <img class="arrow pulse" src="./icons/arrow.svg" alt="flecha">
         </div>
 
         <div class="banners">
-          <div>
+          <div data-anime="left">
             <img class="banners-img" src="./images/mae-filha.jpg" alt="">
             <div class="banner-text">
               <h5 class="banner-title">Título do banner</h5>
@@ -135,7 +140,7 @@
           </div>
 
           <div class="aside-banners">
-            <div class="small-banner">
+            <div class="small-banner" data-anime="right">
               <img class="small-img" src="./images/loja-banner.jpg" alt="">
               <div class="banner-text">
                 <h5 class="banner-title">Título do banner</h5>
@@ -146,7 +151,7 @@
               </div>
             </div>
             
-            <div>
+            <div data-anime="up">
               <img class="banners-img" src="./images/garota.jpg" alt="">
               <div class="banner-text">
                 <h5 class="banner-title">Título do banner</h5>
@@ -215,15 +220,54 @@
           </h3>
         </a>
       </div>
-      <div class="instagram">
-        <div>
+      <div class="instagram" data-anime="up">
+        <div class="relative-1" data-anime="left">
           <img class="pictures" src="./images/modelo-homem.jpg" alt="modelo homem">
+          <img class="logo-insta-1" src="./images/insta.png" alt="logo instagram">
+
+          <div class="instagram-hover">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+              aliqua. Metus vulputate eu scelerisque
+              felis imperdiet proin fermentum.
+              Praesent semper feugiat nibh sed
+              pulvinar proin gravida.
+            </p>
+          </div>
         </div>
-        <div class="mid-picture">
+        <div class="relative-2 mid-picture" data-anime="up">
           <img class="pictures" src="./images/loja.jpg" alt="loja">
+          <img class="logo-insta-2" src="./images/insta.png" alt="logo instagram">
+
+          <div class="instagram-hover">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+              aliqua. Metus vulputate eu scelerisque
+              felis imperdiet proin fermentum.
+              Praesent semper feugiat nibh sed
+              pulvinar proin gravida.
+            </p>
+          </div>
         </div>
-        <div>
+        <div class="relative-3" data-anime="right">
           <img class="pictures" src="./images/garotas.jpg" alt="garotas">
+          <img class="logo-insta-3" src="./images/insta.png" alt="logo instagram">
+
+          <div class="instagram-hover">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+              aliqua. Metus vulputate eu scelerisque
+              felis imperdiet proin fermentum.
+              Praesent semper feugiat nibh sed
+              pulvinar proin gravida.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -29,6 +29,12 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .footer-menu {
     font-size: 115%;
     display: block;
@@ -67,6 +73,10 @@
   .footer-mid {
     width: 40%;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      margin: 50px 0 65px 0;
+    }
 
     .footer-form {
       position: relative;

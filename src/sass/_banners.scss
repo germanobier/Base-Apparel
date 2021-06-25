@@ -4,11 +4,23 @@
 
   .text-introduction {
     margin-top: -100px;
+    position: relative;
 
     @media (max-width: 768px) {
       margin-top: 0;
       margin-bottom: 50px;
     }
+  }
+
+  .arrow {
+    width: 112px;
+    height: 112px;
+    position: absolute;
+    bottom: -230px;
+    cursor: pointer;
+    transform: rotateZ(270deg);
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
   }
 
   .banners-flex {
