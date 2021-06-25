@@ -21,7 +21,7 @@ function compilaSass() {
 function compilaJS() {
   return gulp
     .src("./src/js/*.js")
-    .pipe(concat('scripts.js'))
+    .pipe(concat('index.min.js'))
     .pipe(
       minify({
         mangle: {
@@ -29,7 +29,7 @@ function compilaJS() {
         },
       })
     )
-    .pipe(gulp.dest("./dist/scripts"));
+    .pipe(gulp.dest("./dist/js"));
 }
 
 function compilaHTML() {
